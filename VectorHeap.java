@@ -51,6 +51,7 @@ public class VectorHeap <E extends Comparable<E>>{
 				}
 			}
 		}
+		M.elementAt(0).setRaiz();
 	}
 	
 	
