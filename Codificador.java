@@ -42,6 +42,19 @@ public class Codificador {
 		Heap2.add(modificado);
 	}
 	
+	public synchronized void recorridoPreorden(){
+		ayudantePreorden(raiz);
+	}
+	//Metodo en preorden
+
+	private void ayudantePreorden(BinaryTree<E> Tree){
+		if (Tree == null)
+			return;
+		//Recorre el arbol izquierdo y luego el derecho.
+		ayudantePreorden(Tree.left); 
+		ayudantePreorden(Tree.right); 
+	}
+	
 	
 
 }
